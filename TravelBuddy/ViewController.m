@@ -8,6 +8,9 @@
 
 #import "ViewController.h"
 
+#import <JHSidebar/JHSidebarViewController.h>
+
+
 @interface ViewController ()
 
 @end
@@ -16,6 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -23,5 +27,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void)onMenuButtonPress:(id)sender {
+    // Toggle left sidebar
+    [self.sidebarViewController toggleLeftSidebar];
+}
+
 
 @end

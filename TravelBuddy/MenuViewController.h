@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MenuViewController.h
 //  TravelBuddy
 //
 //  Created by J.J. Jackson on 1/12/15.
@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-- (IBAction)onMenuButtonPress:(id)sender;
+@interface MenuViewController : UITableViewController
 
 @end
-

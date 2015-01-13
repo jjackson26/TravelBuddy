@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import <JHSidebar/JHSidebarViewController.h>
+
 @interface AppDelegate ()
 
 @end
@@ -16,6 +18,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    self.sidebarViewController = (JHSidebarViewController *)self.window.rootViewController;
+    [self.sidebarViewController enableTapGesture]; // Enables tap on open sidebar to close
+//    [self.sidebarViewController enablePanGesture]; // Enables panning to open and close sidebars
+    [self.sidebarViewController setSlideMainViewWithLeftSidebar:YES]; // Main view will slide with side bar instead of left side bar overlapping main view
+
+
     // Override point for customization after application launch.
     return YES;
 }
