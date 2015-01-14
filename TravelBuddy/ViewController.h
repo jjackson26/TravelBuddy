@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MindMeldSDK/MindMeldSDK.h>
 
-@interface ViewController : UIViewController
+#import "MMVoiceSearchBarView.h"
+
+@interface ViewController : UIViewController <UITableViewDataSource>
 
 - (IBAction)onMenuButtonPress:(id)sender;
 
-@end
+@property (weak, nonatomic) IBOutlet MMVoiceSearchBarView *searchBarView;
+@property (weak, nonatomic) IBOutlet UITableView *resultsTableView;
 
+@end

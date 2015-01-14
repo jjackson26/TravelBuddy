@@ -35,6 +35,12 @@
 		2819A2031A66E87600893517 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2819A2021A66E87600893517 /* CFNetwork.framework */; };
 		2819A2051A66E87C00893517 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2819A2041A66E87C00893517 /* Security.framework */; };
 		2B355315DD70CA387E2FFC39 /* libPods-TravelBuddy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75450B174DA79AAB30740FA2 /* libPods-TravelBuddy.a */; };
+		9FB8146E1A64EB5000622406 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB8146D1A64EB5000622406 /* libicucore.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
+		9FB814701A64EB7800622406 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB8146F1A64EB7800622406 /* CFNetwork.framework */; };
+		9FB814721A64EB8300622406 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB814711A64EB8300622406 /* Security.framework */; };
+		9FB814741A65FA8000622406 /* MindMeldSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB814731A65FA8000622406 /* MindMeldSDK.framework */; };
+		9FB814771A65FA9100622406 /* FLAC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB814751A65FA9100622406 /* FLAC.framework */; };
+		9FB814781A65FA9100622406 /* Ogg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB814761A65FA9100622406 /* Ogg.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +103,12 @@
 		2819A2041A66E87C00893517 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		6740931CD2F330882BCB8597 /* Pods-TravelBuddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelBuddy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelBuddy/Pods-TravelBuddy.debug.xcconfig"; sourceTree = "<group>"; };
 		75450B174DA79AAB30740FA2 /* libPods-TravelBuddy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TravelBuddy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FB8146D1A64EB5000622406 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		9FB8146F1A64EB7800622406 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		9FB814711A64EB8300622406 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		9FB814731A65FA8000622406 /* MindMeldSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MindMeldSDK.framework; sourceTree = "<group>"; };
+		9FB814751A65FA9100622406 /* FLAC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FLAC.framework; path = vendor/FLAC.framework; sourceTree = "<group>"; };
+		9FB814761A65FA9100622406 /* Ogg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ogg.framework; path = vendor/Ogg.framework; sourceTree = "<group>"; };
 		B91DC6083F8FB82A73D3DC04 /* Pods-TravelBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelBuddy.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelBuddy/Pods-TravelBuddy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 

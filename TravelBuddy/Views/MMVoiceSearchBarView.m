@@ -12,7 +12,7 @@
 #import "UIView+AutoLayout.h"
 #import "UIColor+MindMeldStarterApp.h"
 
-static const CGFloat kSearchBarHeight = 60.0;
+//static const CGFloat kSearchBarHeight = 60.0;
 
 static const CGFloat kSearchVerticalMargin = 8.0;
 static const CGFloat kLeftMargin = 12.0;

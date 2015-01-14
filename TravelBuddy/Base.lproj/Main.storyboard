@@ -18,7 +18,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Opk-00-tZZ" customClass="MMVoiceSearchBarView">
                                 <rect key="frame" x="0.0" y="72" width="320" height="60"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="zV0-ye-NPH"/>
                                 </constraints>
@@ -38,10 +38,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="searchBarView" destination="Opk-00-tZZ" id="lmu-KJ-rud"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="759" y="-448"/>
+            <point key="canvasLocation" x="793" y="-448"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="srm-p0-VQI">
