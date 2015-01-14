@@ -7,10 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MindMeldSDK/MindMeldSDK.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <MMAppDelegate, UITableViewDataSource>
 
 - (IBAction)onMenuButtonPress:(id)sender;
 
-@end
+@property (weak, nonatomic) IBOutlet UIButton *button;
+@property (weak, nonatomic) IBOutlet UITableView *resultsTableView;
+@property (weak, nonatomic) IBOutlet UILabel *transcriptLabel;
+@property (nonatomic, strong) MMListener *listener;
+@property (nonatomic, strong) MMApp *mindMeldApp;
 
+@end
