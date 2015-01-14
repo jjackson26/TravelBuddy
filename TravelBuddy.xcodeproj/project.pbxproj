@@ -35,12 +35,6 @@
 		2819A2031A66E87600893517 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2819A2021A66E87600893517 /* CFNetwork.framework */; };
 		2819A2051A66E87C00893517 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2819A2041A66E87C00893517 /* Security.framework */; };
 		2B355315DD70CA387E2FFC39 /* libPods-TravelBuddy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75450B174DA79AAB30740FA2 /* libPods-TravelBuddy.a */; };
-		9FB8146E1A64EB5000622406 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB8146D1A64EB5000622406 /* libicucore.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
-		9FB814701A64EB7800622406 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB8146F1A64EB7800622406 /* CFNetwork.framework */; };
-		9FB814721A64EB8300622406 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB814711A64EB8300622406 /* Security.framework */; };
-		9FB814741A65FA8000622406 /* MindMeldSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB814731A65FA8000622406 /* MindMeldSDK.framework */; };
-		9FB814771A65FA9100622406 /* FLAC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB814751A65FA9100622406 /* FLAC.framework */; };
-		9FB814781A65FA9100622406 /* Ogg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB814761A65FA9100622406 /* Ogg.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,18 +54,18 @@
 		28199FE31A647A8900893517 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		28199FE41A647A8900893517 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		28199FE71A647A8900893517 /* TravelBuddy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TravelBuddy.xcdatamodel; sourceTree = "<group>"; };
-		28199FE91A647A8900893517 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		28199FEA1A647A8900893517 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		28199FE91A647A8900893517 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Controllers/ViewController.h; sourceTree = "<group>"; };
+		28199FEA1A647A8900893517 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Controllers/ViewController.m; sourceTree = "<group>"; };
 		28199FED1A647A8900893517 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28199FEF1A647A8900893517 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		28199FF21A647A8900893517 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		28199FF81A647A8900893517 /* TravelBuddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelBuddyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28199FFD1A647A8900893517 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28199FFE1A647A8900893517 /* TravelBuddyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TravelBuddyTests.m; sourceTree = "<group>"; };
-		2819A00C1A6493C400893517 /* SidebarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidebarViewController.h; sourceTree = "<group>"; };
-		2819A00D1A6493C400893517 /* SidebarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidebarViewController.m; sourceTree = "<group>"; };
-		2819A00F1A64998B00893517 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
-		2819A0101A64998B00893517 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		2819A00C1A6493C400893517 /* SidebarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SidebarViewController.h; path = Controllers/SidebarViewController.h; sourceTree = "<group>"; };
+		2819A00D1A6493C400893517 /* SidebarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SidebarViewController.m; path = Controllers/SidebarViewController.m; sourceTree = "<group>"; };
+		2819A00F1A64998B00893517 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuViewController.h; path = Controllers/MenuViewController.h; sourceTree = "<group>"; };
+		2819A0101A64998B00893517 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuViewController.m; path = Controllers/MenuViewController.m; sourceTree = "<group>"; };
 		2819A0131A66589700893517 /* MindMeldSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MindMeldSDK.framework; sourceTree = "<group>"; };
 		2819A0141A66589700893517 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2819A12E1A66589800893517 /* FLAC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FLAC.framework; sourceTree = "<group>"; };
@@ -103,12 +97,6 @@
 		2819A2041A66E87C00893517 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		6740931CD2F330882BCB8597 /* Pods-TravelBuddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelBuddy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelBuddy/Pods-TravelBuddy.debug.xcconfig"; sourceTree = "<group>"; };
 		75450B174DA79AAB30740FA2 /* libPods-TravelBuddy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TravelBuddy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9FB8146D1A64EB5000622406 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
-		9FB8146F1A64EB7800622406 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		9FB814711A64EB8300622406 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		9FB814731A65FA8000622406 /* MindMeldSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MindMeldSDK.framework; sourceTree = "<group>"; };
-		9FB814751A65FA9100622406 /* FLAC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FLAC.framework; path = vendor/FLAC.framework; sourceTree = "<group>"; };
-		9FB814761A65FA9100622406 /* Ogg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ogg.framework; path = vendor/Ogg.framework; sourceTree = "<group>"; };
 		B91DC6083F8FB82A73D3DC04 /* Pods-TravelBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelBuddy.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelBuddy/Pods-TravelBuddy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -204,12 +192,12 @@
 		2819A00B1A64915200893517 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2819A00F1A64998B00893517 /* MenuViewController.h */,
+				2819A0101A64998B00893517 /* MenuViewController.m */,
 				2819A00C1A6493C400893517 /* SidebarViewController.h */,
 				2819A00D1A6493C400893517 /* SidebarViewController.m */,
 				28199FE91A647A8900893517 /* ViewController.h */,
 				28199FEA1A647A8900893517 /* ViewController.m */,
-				2819A00F1A64998B00893517 /* MenuViewController.h */,
-				2819A0101A64998B00893517 /* MenuViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
