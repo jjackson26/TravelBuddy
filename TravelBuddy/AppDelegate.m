@@ -8,7 +8,9 @@
 
 #import "AppDelegate.h"
 
+// utilities
 #import <JHSidebar/JHSidebarViewController.h>
+#import <MindMeldSDK/MindMeldSDK.h>
 
 @interface AppDelegate ()
 
@@ -23,6 +25,7 @@
 //    [self.sidebarViewController enablePanGesture]; // Enables panning to open and close sidebars
     [self.sidebarViewController setSlideMainViewWithLeftSidebar:YES]; // Main view will slide with side bar instead of left side bar overlapping main view
 
+    [MMListener prepareAudioSession];
 
     // Override point for customization after application launch.
     return YES;
@@ -44,6 +47,7 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    [MMListener prepareAudioSession];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {

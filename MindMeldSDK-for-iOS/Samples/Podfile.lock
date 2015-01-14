@@ -1,0 +1,24 @@
+PODS:
+  - CHTCollectionViewWaterfallLayout (0.8)
+  - JMJParametricAnimation (1.0)
+  - SDWebImage (3.7.1):
+    - SDWebImage/Core (= 3.7.1)
+  - SDWebImage/Core (3.7.1)
+  - SVWebViewController (1.0)
+  - TLIndexPathTools (0.3.7)
+
+DEPENDENCIES:
+  - CHTCollectionViewWaterfallLayout (~> 0.8)
+  - JMJParametricAnimation (~> 1.0)
+  - SDWebImage (~> 3.7.1)
+  - SVWebViewController (~> 1.0)
+  - TLIndexPathTools (~> 0.3.7)
+
+SPEC CHECKSUMS:
+  CHTCollectionViewWaterfallLayout: 14b7950cbe45ae9297e7759148d69b022bac047d
+  JMJParametricAnimation: 6c43f03b60fa3f6e158dfa441063fffcee8327d6
+  SDWebImage: 116e88633b5b416ea0ca4b334a4ac59cf72dd38d
+  SVWebViewController: fbf917baa92744c54cfb89a52a4c056e409973a4
+  TLIndexPathTools: 366d360e2032e5cf0494586143803611e2fcb053
+
+COCOAPODS: 0.35.0

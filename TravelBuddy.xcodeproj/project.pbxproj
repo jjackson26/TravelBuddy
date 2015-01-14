@@ -17,6 +17,23 @@
 		28199FFF1A647A8900893517 /* TravelBuddyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28199FFE1A647A8900893517 /* TravelBuddyTests.m */; };
 		2819A00E1A6493C400893517 /* SidebarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2819A00D1A6493C400893517 /* SidebarViewController.m */; };
 		2819A0111A64998B00893517 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2819A0101A64998B00893517 /* MenuViewController.m */; };
+		2819A1301A66589800893517 /* MindMeldSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2819A0131A66589700893517 /* MindMeldSDK.framework */; };
+		2819A1C51A66589800893517 /* FLAC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2819A12E1A66589800893517 /* FLAC.framework */; };
+		2819A1C61A66589800893517 /* Ogg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2819A12F1A66589800893517 /* Ogg.framework */; };
+		2819A1E01A66E67E00893517 /* MMVoiceSearchBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2819A1DF1A66E67E00893517 /* MMVoiceSearchBarView.m */; };
+		2819A1E31A66E6B800893517 /* MMMicrophoneButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2819A1E21A66E6B800893517 /* MMMicrophoneButton.m */; };
+		2819A1F11A66E6E000893517 /* NSJSONSerialization+Files.m in Sources */ = {isa = PBXBuildFile; fileRef = 2819A1E61A66E6E000893517 /* NSJSONSerialization+Files.m */; };
+		2819A1F21A66E6E000893517 /* UIColor+MindMeldStarterApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 2819A1E81A66E6E000893517 /* UIColor+MindMeldStarterApp.m */; };
+		2819A1F31A66E6E000893517 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 2819A1EA1A66E6E000893517 /* UIImage+ImageEffects.m */; };
+		2819A1F41A66E6E000893517 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2819A1EC1A66E6E000893517 /* UIView+AutoLayout.m */; };
+		2819A1F51A66E6E000893517 /* UIView+CornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 2819A1EE1A66E6E000893517 /* UIView+CornerRadius.m */; };
+		2819A1F61A66E6E000893517 /* UIView+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 2819A1F01A66E6E000893517 /* UIView+Screenshot.m */; };
+		2819A1FB1A66E72500893517 /* CAShapeLayer+MindMeld.m in Sources */ = {isa = PBXBuildFile; fileRef = 2819A1F81A66E72500893517 /* CAShapeLayer+MindMeld.m */; };
+		2819A1FC1A66E72500893517 /* MMActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2819A1FA1A66E72500893517 /* MMActivityIndicatorView.m */; };
+		2819A1FF1A66E77D00893517 /* UIImage+Masks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2819A1FE1A66E77D00893517 /* UIImage+Masks.m */; };
+		2819A2011A66E86A00893517 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2819A2001A66E86A00893517 /* libicucore.dylib */; };
+		2819A2031A66E87600893517 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2819A2021A66E87600893517 /* CFNetwork.framework */; };
+		2819A2051A66E87C00893517 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2819A2041A66E87C00893517 /* Security.framework */; };
 		2B355315DD70CA387E2FFC39 /* libPods-TravelBuddy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75450B174DA79AAB30740FA2 /* libPods-TravelBuddy.a */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +66,35 @@
 		2819A00D1A6493C400893517 /* SidebarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidebarViewController.m; sourceTree = "<group>"; };
 		2819A00F1A64998B00893517 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		2819A0101A64998B00893517 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		2819A0131A66589700893517 /* MindMeldSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MindMeldSDK.framework; sourceTree = "<group>"; };
+		2819A0141A66589700893517 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2819A12E1A66589800893517 /* FLAC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FLAC.framework; sourceTree = "<group>"; };
+		2819A12F1A66589800893517 /* Ogg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Ogg.framework; sourceTree = "<group>"; };
+		2819A1DE1A66E67E00893517 /* MMVoiceSearchBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVoiceSearchBarView.h; sourceTree = "<group>"; };
+		2819A1DF1A66E67E00893517 /* MMVoiceSearchBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVoiceSearchBarView.m; sourceTree = "<group>"; };
+		2819A1E11A66E6B800893517 /* MMMicrophoneButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMicrophoneButton.h; sourceTree = "<group>"; };
+		2819A1E21A66E6B800893517 /* MMMicrophoneButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMicrophoneButton.m; sourceTree = "<group>"; };
+		2819A1E51A66E6E000893517 /* NSJSONSerialization+Files.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSJSONSerialization+Files.h"; sourceTree = "<group>"; };
+		2819A1E61A66E6E000893517 /* NSJSONSerialization+Files.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSJSONSerialization+Files.m"; sourceTree = "<group>"; };
+		2819A1E71A66E6E000893517 /* UIColor+MindMeldStarterApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MindMeldStarterApp.h"; sourceTree = "<group>"; };
+		2819A1E81A66E6E000893517 /* UIColor+MindMeldStarterApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MindMeldStarterApp.m"; sourceTree = "<group>"; };
+		2819A1E91A66E6E000893517 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		2819A1EA1A66E6E000893517 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		2819A1EB1A66E6E000893517 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
+		2819A1EC1A66E6E000893517 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
+		2819A1ED1A66E6E000893517 /* UIView+CornerRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CornerRadius.h"; sourceTree = "<group>"; };
+		2819A1EE1A66E6E000893517 /* UIView+CornerRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CornerRadius.m"; sourceTree = "<group>"; };
+		2819A1EF1A66E6E000893517 /* UIView+Screenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Screenshot.h"; sourceTree = "<group>"; };
+		2819A1F01A66E6E000893517 /* UIView+Screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Screenshot.m"; sourceTree = "<group>"; };
+		2819A1F71A66E72500893517 /* CAShapeLayer+MindMeld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAShapeLayer+MindMeld.h"; sourceTree = "<group>"; };
+		2819A1F81A66E72500893517 /* CAShapeLayer+MindMeld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAShapeLayer+MindMeld.m"; sourceTree = "<group>"; };
+		2819A1F91A66E72500893517 /* MMActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMActivityIndicatorView.h; sourceTree = "<group>"; };
+		2819A1FA1A66E72500893517 /* MMActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMActivityIndicatorView.m; sourceTree = "<group>"; };
+		2819A1FD1A66E77D00893517 /* UIImage+Masks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Masks.h"; sourceTree = "<group>"; };
+		2819A1FE1A66E77D00893517 /* UIImage+Masks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Masks.m"; sourceTree = "<group>"; };
+		2819A2001A66E86A00893517 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		2819A2021A66E87600893517 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		2819A2041A66E87C00893517 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		6740931CD2F330882BCB8597 /* Pods-TravelBuddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelBuddy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelBuddy/Pods-TravelBuddy.debug.xcconfig"; sourceTree = "<group>"; };
 		75450B174DA79AAB30740FA2 /* libPods-TravelBuddy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TravelBuddy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B91DC6083F8FB82A73D3DC04 /* Pods-TravelBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelBuddy.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelBuddy/Pods-TravelBuddy.release.xcconfig"; sourceTree = "<group>"; };
@@ -59,7 +105,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2819A2051A66E87C00893517 /* Security.framework in Frameworks */,
+				2819A2031A66E87600893517 /* CFNetwork.framework in Frameworks */,
+				2819A2011A66E86A00893517 /* libicucore.dylib in Frameworks */,
+				2819A1C51A66589800893517 /* FLAC.framework in Frameworks */,
 				2B355315DD70CA387E2FFC39 /* libPods-TravelBuddy.a in Frameworks */,
+				2819A1C61A66589800893517 /* Ogg.framework in Frameworks */,
+				2819A1301A66589800893517 /* MindMeldSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +128,7 @@
 		28199FD31A647A8900893517 = {
 			isa = PBXGroup;
 			children = (
+				2819A0121A66589700893517 /* MindMeldSDK-for-iOS */,
 				28199FDE1A647A8900893517 /* TravelBuddy */,
 				28199FFB1A647A8900893517 /* TravelBuddyTests */,
 				28199FDD1A647A8900893517 /* Products */,
@@ -96,14 +149,16 @@
 		28199FDE1A647A8900893517 /* TravelBuddy */ = {
 			isa = PBXGroup;
 			children = (
-				28199FE31A647A8900893517 /* AppDelegate.h */,
-				28199FE41A647A8900893517 /* AppDelegate.m */,
 				2819A00B1A64915200893517 /* Controllers */,
-				28199FEC1A647A8900893517 /* Main.storyboard */,
+				28199FDF1A647A8900893517 /* Supporting Files */,
+				28199FE31A647A8900893517 /* AppDelegate.h */,
+				2819A1DD1A66E67E00893517 /* Views */,
+				2819A1E41A66E6E000893517 /* Utilities */,
+				28199FE41A647A8900893517 /* AppDelegate.m */,
 				28199FEF1A647A8900893517 /* Images.xcassets */,
 				28199FF11A647A8900893517 /* LaunchScreen.xib */,
+				28199FEC1A647A8900893517 /* Main.storyboard */,
 				28199FE61A647A8900893517 /* TravelBuddy.xcdatamodeld */,
-				28199FDF1A647A8900893517 /* Supporting Files */,
 			);
 			path = TravelBuddy;
 			sourceTree = "<group>";
@@ -147,9 +202,67 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
+		2819A0121A66589700893517 /* MindMeldSDK-for-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2819A0131A66589700893517 /* MindMeldSDK.framework */,
+				2819A0141A66589700893517 /* README.md */,
+				2819A12D1A66589800893517 /* vendor */,
+			);
+			path = "MindMeldSDK-for-iOS";
+			sourceTree = "<group>";
+		};
+		2819A12D1A66589800893517 /* vendor */ = {
+			isa = PBXGroup;
+			children = (
+				2819A12E1A66589800893517 /* FLAC.framework */,
+				2819A12F1A66589800893517 /* Ogg.framework */,
+			);
+			path = vendor;
+			sourceTree = "<group>";
+		};
+		2819A1DD1A66E67E00893517 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2819A1F71A66E72500893517 /* CAShapeLayer+MindMeld.h */,
+				2819A1F81A66E72500893517 /* CAShapeLayer+MindMeld.m */,
+				2819A1F91A66E72500893517 /* MMActivityIndicatorView.h */,
+				2819A1FA1A66E72500893517 /* MMActivityIndicatorView.m */,
+				2819A1E11A66E6B800893517 /* MMMicrophoneButton.h */,
+				2819A1E21A66E6B800893517 /* MMMicrophoneButton.m */,
+				2819A1DE1A66E67E00893517 /* MMVoiceSearchBarView.h */,
+				2819A1DF1A66E67E00893517 /* MMVoiceSearchBarView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2819A1E41A66E6E000893517 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2819A1E51A66E6E000893517 /* NSJSONSerialization+Files.h */,
+				2819A1E61A66E6E000893517 /* NSJSONSerialization+Files.m */,
+				2819A1E71A66E6E000893517 /* UIColor+MindMeldStarterApp.h */,
+				2819A1E81A66E6E000893517 /* UIColor+MindMeldStarterApp.m */,
+				2819A1E91A66E6E000893517 /* UIImage+ImageEffects.h */,
+				2819A1EA1A66E6E000893517 /* UIImage+ImageEffects.m */,
+				2819A1FD1A66E77D00893517 /* UIImage+Masks.h */,
+				2819A1FE1A66E77D00893517 /* UIImage+Masks.m */,
+				2819A1EB1A66E6E000893517 /* UIView+AutoLayout.h */,
+				2819A1EC1A66E6E000893517 /* UIView+AutoLayout.m */,
+				2819A1ED1A66E6E000893517 /* UIView+CornerRadius.h */,
+				2819A1EE1A66E6E000893517 /* UIView+CornerRadius.m */,
+				2819A1EF1A66E6E000893517 /* UIView+Screenshot.h */,
+				2819A1F01A66E6E000893517 /* UIView+Screenshot.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		8CB5A37412CF380EE77D9B17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2819A2041A66E87C00893517 /* Security.framework */,
+				2819A2021A66E87600893517 /* CFNetwork.framework */,
+				2819A2001A66E86A00893517 /* libicucore.dylib */,
 				75450B174DA79AAB30740FA2 /* libPods-TravelBuddy.a */,
 			);
 			name = Frameworks;
@@ -300,11 +413,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				2819A00E1A6493C400893517 /* SidebarViewController.m in Sources */,
+				2819A1F41A66E6E000893517 /* UIView+AutoLayout.m in Sources */,
+				2819A1F21A66E6E000893517 /* UIColor+MindMeldStarterApp.m in Sources */,
+				2819A1FC1A66E72500893517 /* MMActivityIndicatorView.m in Sources */,
+				2819A1FF1A66E77D00893517 /* UIImage+Masks.m in Sources */,
+				2819A1E31A66E6B800893517 /* MMMicrophoneButton.m in Sources */,
 				2819A0111A64998B00893517 /* MenuViewController.m in Sources */,
+				2819A1F31A66E6E000893517 /* UIImage+ImageEffects.m in Sources */,
 				28199FE51A647A8900893517 /* AppDelegate.m in Sources */,
+				2819A1F11A66E6E000893517 /* NSJSONSerialization+Files.m in Sources */,
+				2819A1F61A66E6E000893517 /* UIView+Screenshot.m in Sources */,
 				28199FE81A647A8900893517 /* TravelBuddy.xcdatamodeld in Sources */,
 				28199FEB1A647A8900893517 /* ViewController.m in Sources */,
 				28199FE21A647A8900893517 /* main.m in Sources */,
+				2819A1FB1A66E72500893517 /* CAShapeLayer+MindMeld.m in Sources */,
+				2819A1F51A66E6E000893517 /* UIView+CornerRadius.m in Sources */,
+				2819A1E01A66E67E00893517 /* MMVoiceSearchBarView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +551,11 @@
 			baseConfigurationReference = 6740931CD2F330882BCB8597 /* Pods-TravelBuddy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MindMeldSDK-for-iOS",
+					"$(PROJECT_DIR)/MindMeldSDK-for-iOS/vendor",
+				);
 				INFOPLIST_FILE = TravelBuddy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -438,6 +567,11 @@
 			baseConfigurationReference = B91DC6083F8FB82A73D3DC04 /* Pods-TravelBuddy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MindMeldSDK-for-iOS",
+					"$(PROJECT_DIR)/MindMeldSDK-for-iOS/vendor",
+				);
 				INFOPLIST_FILE = TravelBuddy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

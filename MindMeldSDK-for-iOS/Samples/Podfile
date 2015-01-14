@@ -1,0 +1,24 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+workspace 'MindMeldSDKSampleCode'
+xcodeproj 'MindMeldBrowser/MindMeldBrowser.xcodeproj'
+xcodeproj 'MindMeldHelloWorld/MindMeldHelloWorld.xcodeproj'
+xcodeproj 'MindMeldIM/MindMeldIM.xcodeproj'
+xcodeproj 'MindMeldVoice/MindMeldVoice.xcodeproj'
+xcodeproj 'MindMeldStarterApp/MindMeldStarterApp.xcodeproj'
+
+target "MindMeldVoice" do
+  platform :ios, '7.0'
+  pod 'SDWebImage', '~> 3.7.1'
+  pod 'SVWebViewController', '~> 1.0', :inhibit_warnings => true
+  xcodeproj 'MindMeldVoice/MindMeldVoice.xcodeproj'
+end
+
+target "MindMeldStarterApp" do
+  platform :ios, '7.0'
+  pod 'CHTCollectionViewWaterfallLayout', '~> 0.8'
+  pod 'TLIndexPathTools', '~> 0.3.7'
+  pod 'SDWebImage', '~> 3.7.1'
+  pod 'JMJParametricAnimation', '~> 1.0'
+  xcodeproj 'MindMeldStarterApp/MindMeldStarterApp.xcodeproj'
+end

@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0DE6E65318B5238B0090C943 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE6E65218B5238B0090C943 /* Foundation.framework */; };
+		0DE6E65518B5238B0090C943 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE6E65418B5238B0090C943 /* CoreGraphics.framework */; };
+		0DE6E65718B5238B0090C943 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE6E65618B5238B0090C943 /* UIKit.framework */; };
+		0DE6E65D18B5238B0090C943 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0DE6E65B18B5238B0090C943 /* InfoPlist.strings */; };
+		0DE6E65F18B5238B0090C943 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE6E65E18B5238B0090C943 /* main.m */; };
+		0DE6E66318B5238B0090C943 /* MMIMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE6E66218B5238B0090C943 /* MMIMAppDelegate.m */; };
+		0DE6E66518B5238B0090C943 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DE6E66418B5238B0090C943 /* Images.xcassets */; };
+		0DE6E68818B524E00090C943 /* MMConversationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE6E68618B524E00090C943 /* MMConversationViewController.m */; };
+		0DE6E68E18B525FC0090C943 /* MMConversationScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE6E68D18B525FC0090C943 /* MMConversationScrollView.m */; };
+		0DE6E69118B5261A0090C943 /* MMMessagingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE6E69018B5261A0090C943 /* MMMessagingView.m */; };
+		0DE6E69718B52C120090C943 /* MMMessagesScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE6E69618B52C120090C943 /* MMMessagesScrollView.m */; };
+		0DE6E69A18B52C2D0090C943 /* MMMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE6E69918B52C2D0090C943 /* MMMessageView.m */; };
+		0DE6E69D18B69DE80090C943 /* MMDocumentsScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE6E69C18B69DE80090C943 /* MMDocumentsScrollView.m */; };
+		0DE6E6A018B69EA20090C943 /* MMDocumentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE6E69F18B69EA20090C943 /* MMDocumentView.m */; };
+		2805803C19B6581100F80190 /* MindMeldSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2805803B19B6581100F80190 /* MindMeldSDK.framework */; };
+		2805804019B6582500F80190 /* FLAC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2805803E19B6582500F80190 /* FLAC.framework */; };
+		2805804119B6582500F80190 /* Ogg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2805803F19B6582500F80190 /* Ogg.framework */; };
+		2895B8AB18D2579E0029605E /* UIColor+MindMeldIM.m in Sources */ = {isa = PBXBuildFile; fileRef = 2895B8AA18D2579E0029605E /* UIColor+MindMeldIM.m */; };
+		435FBD6C18BBB354005F0F32 /* MMConversationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 435FBD6B18BBB354005F0F32 /* MMConversationsViewController.m */; };
+		435FBD7218BBB3C3005F0F32 /* MMConversationsScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 435FBD7118BBB3C3005F0F32 /* MMConversationsScrollView.m */; };
+		435FBD7518BBB41F005F0F32 /* MMSessionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 435FBD7418BBB41F005F0F32 /* MMSessionView.m */; };
+		435FBD7A18BBBDEF005F0F32 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 435FBD7918BBBDEF005F0F32 /* libicucore.dylib */; };
+		435FBD7C18BBBDF8005F0F32 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435FBD7B18BBBDF8005F0F32 /* CFNetwork.framework */; };
+		435FBD7E18BBBDFF005F0F32 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435FBD7D18BBBDFF005F0F32 /* Security.framework */; };
+		435FBD9018BD5F49005F0F32 /* blueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 435FBD8818BD5F49005F0F32 /* blueButton.png */; };
+		435FBD9118BD5F49005F0F32 /* blueButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 435FBD8918BD5F49005F0F32 /* blueButton@2x.png */; };
+		435FBD9218BD5F49005F0F32 /* blueButtonHighlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 435FBD8A18BD5F49005F0F32 /* blueButtonHighlight.png */; };
+		435FBD9318BD5F49005F0F32 /* blueButtonHighlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 435FBD8B18BD5F49005F0F32 /* blueButtonHighlight@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0DE6E64F18B5238B0090C943 /* MindMeldIM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindMeldIM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DE6E65218B5238B0090C943 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0DE6E65418B5238B0090C943 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0DE6E65618B5238B0090C943 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0DE6E65A18B5238B0090C943 /* MindMeldIM-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MindMeldIM-Info.plist"; sourceTree = "<group>"; };
+		0DE6E65C18B5238B0090C943 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0DE6E65E18B5238B0090C943 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0DE6E66018B5238B0090C943 /* MindMeldIM-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MindMeldIM-Prefix.pch"; sourceTree = "<group>"; };
+		0DE6E66118B5238B0090C943 /* MMIMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMIMAppDelegate.h; sourceTree = "<group>"; };
+		0DE6E66218B5238B0090C943 /* MMIMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMIMAppDelegate.m; sourceTree = "<group>"; };
+		0DE6E66418B5238B0090C943 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0DE6E66B18B5238B0090C943 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0DE6E68518B524E00090C943 /* MMConversationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMConversationViewController.h; sourceTree = "<group>"; };
+		0DE6E68618B524E00090C943 /* MMConversationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMConversationViewController.m; sourceTree = "<group>"; };
+		0DE6E68C18B525FC0090C943 /* MMConversationScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMConversationScrollView.h; sourceTree = "<group>"; };
+		0DE6E68D18B525FC0090C943 /* MMConversationScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMConversationScrollView.m; sourceTree = "<group>"; };
+		0DE6E68F18B5261A0090C943 /* MMMessagingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMessagingView.h; sourceTree = "<group>"; };
+		0DE6E69018B5261A0090C943 /* MMMessagingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMessagingView.m; sourceTree = "<group>"; };
+		0DE6E69518B52C120090C943 /* MMMessagesScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMessagesScrollView.h; sourceTree = "<group>"; };
+		0DE6E69618B52C120090C943 /* MMMessagesScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMessagesScrollView.m; sourceTree = "<group>"; };
+		0DE6E69818B52C2D0090C943 /* MMMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMessageView.h; sourceTree = "<group>"; };
+		0DE6E69918B52C2D0090C943 /* MMMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMessageView.m; sourceTree = "<group>"; };
+		0DE6E69B18B69DE80090C943 /* MMDocumentsScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDocumentsScrollView.h; sourceTree = "<group>"; };
+		0DE6E69C18B69DE80090C943 /* MMDocumentsScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDocumentsScrollView.m; sourceTree = "<group>"; };
+		0DE6E69E18B69EA20090C943 /* MMDocumentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDocumentView.h; sourceTree = "<group>"; };
+		0DE6E69F18B69EA20090C943 /* MMDocumentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDocumentView.m; sourceTree = "<group>"; };
+		2805803B19B6581100F80190 /* MindMeldSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MindMeldSDK.framework; path = ../..//MindMeldSDK.framework; sourceTree = "<group>"; };
+		2805803E19B6582500F80190 /* FLAC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FLAC.framework; sourceTree = "<group>"; };
+		2805803F19B6582500F80190 /* Ogg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Ogg.framework; sourceTree = "<group>"; };
+		282C062018D7B72E0057B912 /* MMConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMConstants.h; path = ../MMConstants.h; sourceTree = "<group>"; };
+		2895B8A918D2579E0029605E /* UIColor+MindMeldIM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MindMeldIM.h"; sourceTree = "<group>"; };
+		2895B8AA18D2579E0029605E /* UIColor+MindMeldIM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MindMeldIM.m"; sourceTree = "<group>"; };
+		435FBD6A18BBB354005F0F32 /* MMConversationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMConversationsViewController.h; sourceTree = "<group>"; };
+		435FBD6B18BBB354005F0F32 /* MMConversationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMConversationsViewController.m; sourceTree = "<group>"; };
+		435FBD7018BBB3C3005F0F32 /* MMConversationsScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMConversationsScrollView.h; sourceTree = "<group>"; };
+		435FBD7118BBB3C3005F0F32 /* MMConversationsScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMConversationsScrollView.m; sourceTree = "<group>"; };
+		435FBD7318BBB41F005F0F32 /* MMSessionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSessionView.h; sourceTree = "<group>"; };
+		435FBD7418BBB41F005F0F32 /* MMSessionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSessionView.m; sourceTree = "<group>"; };
+		435FBD7918BBBDEF005F0F32 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		435FBD7B18BBBDF8005F0F32 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		435FBD7D18BBBDFF005F0F32 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		435FBD8818BD5F49005F0F32 /* blueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueButton.png; sourceTree = "<group>"; };
+		435FBD8918BD5F49005F0F32 /* blueButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueButton@2x.png"; sourceTree = "<group>"; };
+		435FBD8A18BD5F49005F0F32 /* blueButtonHighlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueButtonHighlight.png; sourceTree = "<group>"; };
+		435FBD8B18BD5F49005F0F32 /* blueButtonHighlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueButtonHighlight@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0DE6E64C18B5238B0090C943 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2805804119B6582500F80190 /* Ogg.framework in Frameworks */,
+				2805804019B6582500F80190 /* FLAC.framework in Frameworks */,
+				435FBD7E18BBBDFF005F0F32 /* Security.framework in Frameworks */,
+				435FBD7C18BBBDF8005F0F32 /* CFNetwork.framework in Frameworks */,
+				435FBD7A18BBBDEF005F0F32 /* libicucore.dylib in Frameworks */,
+				0DE6E65518B5238B0090C943 /* CoreGraphics.framework in Frameworks */,
+				0DE6E65718B5238B0090C943 /* UIKit.framework in Frameworks */,
+				2805803C19B6581100F80190 /* MindMeldSDK.framework in Frameworks */,
+				0DE6E65318B5238B0090C943 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DE6E64618B5238A0090C943 = {
+			isa = PBXGroup;
+			children = (
+				282C062018D7B72E0057B912 /* MMConstants.h */,
+				2805803B19B6581100F80190 /* MindMeldSDK.framework */,
+				2805803D19B6582500F80190 /* Vendor */,
+				0DE6E65818B5238B0090C943 /* MindMeldIM */,
+				0DE6E65118B5238B0090C943 /* Frameworks */,
+				0DE6E65018B5238B0090C943 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0DE6E65018B5238B0090C943 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0DE6E64F18B5238B0090C943 /* MindMeldIM.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0DE6E65118B5238B0090C943 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				435FBD7D18BBBDFF005F0F32 /* Security.framework */,
+				435FBD7B18BBBDF8005F0F32 /* CFNetwork.framework */,
+				435FBD7918BBBDEF005F0F32 /* libicucore.dylib */,
+				0DE6E65218B5238B0090C943 /* Foundation.framework */,
+				0DE6E65418B5238B0090C943 /* CoreGraphics.framework */,
+				0DE6E65618B5238B0090C943 /* UIKit.framework */,
+				0DE6E66B18B5238B0090C943 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0DE6E65818B5238B0090C943 /* MindMeldIM */ = {
+			isa = PBXGroup;
+			children = (
+				435FBD8618BD5F49005F0F32 /* Resources */,
+				0DE6E68418B524E00090C943 /* Controllers */,
+				2895B8A818D2579E0029605E /* Utilities */,
+				0DE6E68718B524E00090C943 /* Views */,
+				0DE6E66118B5238B0090C943 /* MMIMAppDelegate.h */,
+				0DE6E66218B5238B0090C943 /* MMIMAppDelegate.m */,
+				0DE6E66418B5238B0090C943 /* Images.xcassets */,
+				0DE6E65918B5238B0090C943 /* Supporting Files */,
+			);
+			path = MindMeldIM;
+			sourceTree = "<group>";
+		};
+		0DE6E65918B5238B0090C943 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0DE6E65A18B5238B0090C943 /* MindMeldIM-Info.plist */,
+				0DE6E65B18B5238B0090C943 /* InfoPlist.strings */,
+				0DE6E65E18B5238B0090C943 /* main.m */,
+				0DE6E66018B5238B0090C943 /* MindMeldIM-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0DE6E68418B524E00090C943 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0DE6E68518B524E00090C943 /* MMConversationViewController.h */,
+				0DE6E68618B524E00090C943 /* MMConversationViewController.m */,
+				435FBD6A18BBB354005F0F32 /* MMConversationsViewController.h */,
+				435FBD6B18BBB354005F0F32 /* MMConversationsViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0DE6E68718B524E00090C943 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0DE6E68C18B525FC0090C943 /* MMConversationScrollView.h */,
+				0DE6E68D18B525FC0090C943 /* MMConversationScrollView.m */,
+				435FBD7018BBB3C3005F0F32 /* MMConversationsScrollView.h */,
+				435FBD7118BBB3C3005F0F32 /* MMConversationsScrollView.m */,
+				0DE6E69B18B69DE80090C943 /* MMDocumentsScrollView.h */,
+				0DE6E69C18B69DE80090C943 /* MMDocumentsScrollView.m */,
+				0DE6E69E18B69EA20090C943 /* MMDocumentView.h */,
+				0DE6E69F18B69EA20090C943 /* MMDocumentView.m */,
+				0DE6E69518B52C120090C943 /* MMMessagesScrollView.h */,
+				0DE6E69618B52C120090C943 /* MMMessagesScrollView.m */,
+				0DE6E69818B52C2D0090C943 /* MMMessageView.h */,
+				0DE6E69918B52C2D0090C943 /* MMMessageView.m */,
+				0DE6E68F18B5261A0090C943 /* MMMessagingView.h */,
+				0DE6E69018B5261A0090C943 /* MMMessagingView.m */,
+				435FBD7318BBB41F005F0F32 /* MMSessionView.h */,
+				435FBD7418BBB41F005F0F32 /* MMSessionView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2805803D19B6582500F80190 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				2805803E19B6582500F80190 /* FLAC.framework */,
+				2805803F19B6582500F80190 /* Ogg.framework */,
+			);
+			name = Vendor;
+			path = ../../vendor;
+			sourceTree = "<group>";
+		};
+		2895B8A818D2579E0029605E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2895B8A918D2579E0029605E /* UIColor+MindMeldIM.h */,
+				2895B8AA18D2579E0029605E /* UIColor+MindMeldIM.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		435FBD8618BD5F49005F0F32 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				435FBD8718BD5F49005F0F32 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		435FBD8718BD5F49005F0F32 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				435FBD8818BD5F49005F0F32 /* blueButton.png */,
+				435FBD8918BD5F49005F0F32 /* blueButton@2x.png */,
+				435FBD8A18BD5F49005F0F32 /* blueButtonHighlight.png */,
+				435FBD8B18BD5F49005F0F32 /* blueButtonHighlight@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0DE6E64E18B5238B0090C943 /* MindMeldIM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DE6E67B18B5238B0090C943 /* Build configuration list for PBXNativeTarget "MindMeldIM" */;
+			buildPhases = (
+				0DE6E64B18B5238B0090C943 /* Sources */,
+				0DE6E64C18B5238B0090C943 /* Frameworks */,
+				0DE6E64D18B5238B0090C943 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MindMeldIM;
+			productName = "MindMeld IM";
+			productReference = 0DE6E64F18B5238B0090C943 /* MindMeldIM.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0DE6E64718B5238B0090C943 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Juan;
+			};
+			buildConfigurationList = 0DE6E64A18B5238B0090C943 /* Build configuration list for PBXProject "MindMeldIM" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0DE6E64618B5238A0090C943;
+			productRefGroup = 0DE6E65018B5238B0090C943 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0DE6E64E18B5238B0090C943 /* MindMeldIM */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0DE6E64D18B5238B0090C943 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				435FBD9018BD5F49005F0F32 /* blueButton.png in Resources */,
+				0DE6E65D18B5238B0090C943 /* InfoPlist.strings in Resources */,
+				435FBD9218BD5F49005F0F32 /* blueButtonHighlight.png in Resources */,
+				435FBD9118BD5F49005F0F32 /* blueButton@2x.png in Resources */,
+				0DE6E66518B5238B0090C943 /* Images.xcassets in Resources */,
+				435FBD9318BD5F49005F0F32 /* blueButtonHighlight@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0DE6E64B18B5238B0090C943 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				435FBD7218BBB3C3005F0F32 /* MMConversationsScrollView.m in Sources */,
+				0DE6E66318B5238B0090C943 /* MMIMAppDelegate.m in Sources */,
+				0DE6E69118B5261A0090C943 /* MMMessagingView.m in Sources */,
+				0DE6E68818B524E00090C943 /* MMConversationViewController.m in Sources */,
+				0DE6E69D18B69DE80090C943 /* MMDocumentsScrollView.m in Sources */,
+				2895B8AB18D2579E0029605E /* UIColor+MindMeldIM.m in Sources */,
+				435FBD6C18BBB354005F0F32 /* MMConversationsViewController.m in Sources */,
+				0DE6E68E18B525FC0090C943 /* MMConversationScrollView.m in Sources */,
+				0DE6E69718B52C120090C943 /* MMMessagesScrollView.m in Sources */,
+				0DE6E6A018B69EA20090C943 /* MMDocumentView.m in Sources */,
+				435FBD7518BBB41F005F0F32 /* MMSessionView.m in Sources */,
+				0DE6E65F18B5238B0090C943 /* main.m in Sources */,
+				0DE6E69A18B52C2D0090C943 /* MMMessageView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0DE6E65B18B5238B0090C943 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0DE6E65C18B5238B0090C943 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0DE6E67918B5238B0090C943 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0DE6E67A18B5238B0090C943 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0DE6E67C18B5238B0090C943 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../",
+					"$(SRCROOT)/../../vendor",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MindMeldIM/MindMeldIM-Prefix.pch";
+				INFOPLIST_FILE = "MindMeldIM/MindMeldIM-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = MindMeldIM;
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0DE6E67D18B5238B0090C943 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../",
+					"$(SRCROOT)/../../vendor",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MindMeldIM/MindMeldIM-Prefix.pch";
+				INFOPLIST_FILE = "MindMeldIM/MindMeldIM-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = MindMeldIM;
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0DE6E64A18B5238B0090C943 /* Build configuration list for PBXProject "MindMeldIM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DE6E67918B5238B0090C943 /* Debug */,
+				0DE6E67A18B5238B0090C943 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0DE6E67B18B5238B0090C943 /* Build configuration list for PBXNativeTarget "MindMeldIM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DE6E67C18B5238B0090C943 /* Debug */,
+				0DE6E67D18B5238B0090C943 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0DE6E64718B5238B0090C943 /* Project object */;
+}

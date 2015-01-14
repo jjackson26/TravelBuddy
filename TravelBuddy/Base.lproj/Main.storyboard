@@ -16,17 +16,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the main view" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SAj-mv-yOF">
-                                <rect key="frame" x="80" y="273" width="160" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Opk-00-tZZ" customClass="MMVoiceSearchBarView">
+                                <rect key="frame" x="0.0" y="72" width="320" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="zV0-ye-NPH"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="SAj-mv-yOF" secondAttribute="centerY" constant="0.5" id="3mF-Ze-nCQ"/>
-                            <constraint firstAttribute="centerX" secondItem="SAj-mv-yOF" secondAttribute="centerX" id="8gP-3g-Dr3"/>
+                            <constraint firstItem="Opk-00-tZZ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" symbolic="YES" id="2Vz-kY-hfZ"/>
+                            <constraint firstAttribute="trailing" secondItem="Opk-00-tZZ" secondAttribute="trailing" id="f8c-Jq-EBg"/>
+                            <constraint firstItem="Opk-00-tZZ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="ujx-en-hxQ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Travel Buddy" id="eCY-5e-hdC">
