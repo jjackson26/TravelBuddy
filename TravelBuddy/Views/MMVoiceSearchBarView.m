@@ -12,13 +12,15 @@
 #import "UIView+AutoLayout.h"
 #import "UIColor+MindMeldStarterApp.h"
 
-//static const CGFloat kSearchBarHeight = 60.0;
+static const CGFloat kSearchBarHeight = 60.0;
 
 static const CGFloat kSearchVerticalMargin = 8.0;
 static const CGFloat kLeftMargin = 12.0;
 static const CGFloat kMicrophoneMargin = 3.0;
 
 static const NSTimeInterval kBrandingAnimationDuration = 0.5;
+static const CGFloat kFontSize = 16.0;
+
 
 @interface MMVoiceSearchBarView () <UITextFieldDelegate>
 
@@ -109,7 +111,7 @@ static const NSTimeInterval kBrandingAnimationDuration = 0.5;
     self.label = [UILabel autoLayoutView];
     self.label.lineBreakMode = NSLineBreakByTruncatingHead;
     self.label.textColor = [UIColor whiteColor];
-    self.label.font = [UIFont systemFontOfSize:20];
+    self.label.font = [UIFont systemFontOfSize:kFontSize];
     [self addSubview:self.label];
 
     self.textField = [UITextField autoLayoutView];
@@ -119,7 +121,7 @@ static const NSTimeInterval kBrandingAnimationDuration = 0.5;
     self.attributedPlaceholder = [self attributedPlaceholderString:@"Search"];
 
     self.textField.textColor = [UIColor whiteColor];
-    self.textField.font = [UIFont systemFontOfSize:20];
+    self.textField.font = [UIFont systemFontOfSize:kFontSize];
     [self addSubview:self.textField];
 
     self.searchButton = [UIButton buttonWithType:UIButtonTypeCustom];

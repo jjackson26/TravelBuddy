@@ -11,11 +11,14 @@
 
 #import "MMVoiceSearchBarView.h"
 
-@interface ViewController : UIViewController <UITableViewDataSource>
+@interface RootViewController : UIViewController <UITableViewDataSource>
 
 - (IBAction)onMenuButtonPress:(id)sender;
 
 @property (weak, nonatomic) IBOutlet MMVoiceSearchBarView *searchBarView;
-@property (weak, nonatomic) IBOutlet UITableView *resultsTableView;
+
+@property (weak, nonatomic) IBOutlet UIView *landingContainerView;
+@property (weak, nonatomic) IBOutlet UIView *searchResultsContainerView;
+
 
 @end

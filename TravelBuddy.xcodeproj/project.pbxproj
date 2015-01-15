@@ -10,7 +10,7 @@
 		28199FE21A647A8900893517 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28199FE11A647A8900893517 /* main.m */; };
 		28199FE51A647A8900893517 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28199FE41A647A8900893517 /* AppDelegate.m */; };
 		28199FE81A647A8900893517 /* TravelBuddy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28199FE61A647A8900893517 /* TravelBuddy.xcdatamodeld */; };
-		28199FEB1A647A8900893517 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28199FEA1A647A8900893517 /* ViewController.m */; };
+		28199FEB1A647A8900893517 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28199FEA1A647A8900893517 /* RootViewController.m */; };
 		28199FEE1A647A8900893517 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28199FEC1A647A8900893517 /* Main.storyboard */; };
 		28199FF01A647A8900893517 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28199FEF1A647A8900893517 /* Images.xcassets */; };
 		28199FF31A647A8900893517 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28199FF11A647A8900893517 /* LaunchScreen.xib */; };
@@ -34,6 +34,11 @@
 		2819A2011A66E86A00893517 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2819A2001A66E86A00893517 /* libicucore.dylib */; };
 		2819A2031A66E87600893517 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2819A2021A66E87600893517 /* CFNetwork.framework */; };
 		2819A2051A66E87C00893517 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2819A2041A66E87C00893517 /* Security.framework */; };
+		2819A2081A67320400893517 /* SearchResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2819A2071A67320400893517 /* SearchResultsTableViewController.m */; };
+		288C4EFE1A67400B0038D7E1 /* ImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 288C4EFC1A67400B0038D7E1 /* ImageCollectionViewCell.m */; };
+		288C4F031A6767CC0038D7E1 /* AttractionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 288C4F021A6767CC0038D7E1 /* AttractionTableViewCell.m */; };
+		288F68711A6733D1000172C4 /* LandingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 288F68701A6733D1000172C4 /* LandingViewController.m */; };
+		288F68751A6738E9000172C4 /* Attraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 288F68741A6738E9000172C4 /* Attraction.m */; };
 		2B355315DD70CA387E2FFC39 /* libPods-TravelBuddy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75450B174DA79AAB30740FA2 /* libPods-TravelBuddy.a */; };
 /* End PBXBuildFile section */
 
@@ -54,8 +59,8 @@
 		28199FE31A647A8900893517 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		28199FE41A647A8900893517 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		28199FE71A647A8900893517 /* TravelBuddy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TravelBuddy.xcdatamodel; sourceTree = "<group>"; };
-		28199FE91A647A8900893517 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Controllers/ViewController.h; sourceTree = "<group>"; };
-		28199FEA1A647A8900893517 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Controllers/ViewController.m; sourceTree = "<group>"; };
+		28199FE91A647A8900893517 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = Controllers/RootViewController.h; sourceTree = "<group>"; };
+		28199FEA1A647A8900893517 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = Controllers/RootViewController.m; sourceTree = "<group>"; };
 		28199FED1A647A8900893517 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28199FEF1A647A8900893517 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		28199FF21A647A8900893517 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -95,6 +100,16 @@
 		2819A2001A66E86A00893517 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		2819A2021A66E87600893517 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		2819A2041A66E87C00893517 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2819A2061A67320400893517 /* SearchResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchResultsTableViewController.h; path = Controllers/SearchResultsTableViewController.h; sourceTree = "<group>"; };
+		2819A2071A67320400893517 /* SearchResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchResultsTableViewController.m; path = Controllers/SearchResultsTableViewController.m; sourceTree = "<group>"; };
+		288C4EFB1A67400B0038D7E1 /* ImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCollectionViewCell.h; sourceTree = "<group>"; };
+		288C4EFC1A67400B0038D7E1 /* ImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCollectionViewCell.m; sourceTree = "<group>"; };
+		288C4F011A6767CC0038D7E1 /* AttractionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttractionTableViewCell.h; sourceTree = "<group>"; };
+		288C4F021A6767CC0038D7E1 /* AttractionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttractionTableViewCell.m; sourceTree = "<group>"; };
+		288F686F1A6733D1000172C4 /* LandingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandingViewController.h; sourceTree = "<group>"; };
+		288F68701A6733D1000172C4 /* LandingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandingViewController.m; sourceTree = "<group>"; };
+		288F68731A6738E9000172C4 /* Attraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attraction.h; sourceTree = "<group>"; };
+		288F68741A6738E9000172C4 /* Attraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Attraction.m; sourceTree = "<group>"; };
 		6740931CD2F330882BCB8597 /* Pods-TravelBuddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelBuddy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelBuddy/Pods-TravelBuddy.debug.xcconfig"; sourceTree = "<group>"; };
 		75450B174DA79AAB30740FA2 /* libPods-TravelBuddy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TravelBuddy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B91DC6083F8FB82A73D3DC04 /* Pods-TravelBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelBuddy.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelBuddy/Pods-TravelBuddy.release.xcconfig"; sourceTree = "<group>"; };
@@ -150,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				2819A00B1A64915200893517 /* Controllers */,
+				288F68721A6738CB000172C4 /* Models */,
 				28199FDF1A647A8900893517 /* Supporting Files */,
 				28199FE31A647A8900893517 /* AppDelegate.h */,
 				2819A1DD1A66E67E00893517 /* Views */,
@@ -194,10 +210,14 @@
 			children = (
 				2819A00F1A64998B00893517 /* MenuViewController.h */,
 				2819A0101A64998B00893517 /* MenuViewController.m */,
+				2819A2061A67320400893517 /* SearchResultsTableViewController.h */,
+				2819A2071A67320400893517 /* SearchResultsTableViewController.m */,
 				2819A00C1A6493C400893517 /* SidebarViewController.h */,
 				2819A00D1A6493C400893517 /* SidebarViewController.m */,
-				28199FE91A647A8900893517 /* ViewController.h */,
-				28199FEA1A647A8900893517 /* ViewController.m */,
+				28199FE91A647A8900893517 /* RootViewController.h */,
+				28199FEA1A647A8900893517 /* RootViewController.m */,
+				288F686F1A6733D1000172C4 /* LandingViewController.h */,
+				288F68701A6733D1000172C4 /* LandingViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -232,6 +252,10 @@
 				2819A1E21A66E6B800893517 /* MMMicrophoneButton.m */,
 				2819A1DE1A66E67E00893517 /* MMVoiceSearchBarView.h */,
 				2819A1DF1A66E67E00893517 /* MMVoiceSearchBarView.m */,
+				288C4EFB1A67400B0038D7E1 /* ImageCollectionViewCell.h */,
+				288C4EFC1A67400B0038D7E1 /* ImageCollectionViewCell.m */,
+				288C4F011A6767CC0038D7E1 /* AttractionTableViewCell.h */,
+				288C4F021A6767CC0038D7E1 /* AttractionTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -255,6 +279,15 @@
 				2819A1F01A66E6E000893517 /* UIView+Screenshot.m */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		288F68721A6738CB000172C4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				288F68731A6738E9000172C4 /* Attraction.h */,
+				288F68741A6738E9000172C4 /* Attraction.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		8CB5A37412CF380EE77D9B17 /* Frameworks */ = {
@@ -412,10 +445,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				288F68751A6738E9000172C4 /* Attraction.m in Sources */,
+				288C4EFE1A67400B0038D7E1 /* ImageCollectionViewCell.m in Sources */,
+				288C4F031A6767CC0038D7E1 /* AttractionTableViewCell.m in Sources */,
 				2819A00E1A6493C400893517 /* SidebarViewController.m in Sources */,
 				2819A1F41A66E6E000893517 /* UIView+AutoLayout.m in Sources */,
 				2819A1F21A66E6E000893517 /* UIColor+MindMeldStarterApp.m in Sources */,
 				2819A1FC1A66E72500893517 /* MMActivityIndicatorView.m in Sources */,
+				2819A2081A67320400893517 /* SearchResultsTableViewController.m in Sources */,
+				288F68711A6733D1000172C4 /* LandingViewController.m in Sources */,
 				2819A1FF1A66E77D00893517 /* UIImage+Masks.m in Sources */,
 				2819A1E31A66E6B800893517 /* MMMicrophoneButton.m in Sources */,
 				2819A0111A64998B00893517 /* MenuViewController.m in Sources */,
@@ -424,7 +462,7 @@
 				2819A1F11A66E6E000893517 /* NSJSONSerialization+Files.m in Sources */,
 				2819A1F61A66E6E000893517 /* UIView+Screenshot.m in Sources */,
 				28199FE81A647A8900893517 /* TravelBuddy.xcdatamodeld in Sources */,
-				28199FEB1A647A8900893517 /* ViewController.m in Sources */,
+				28199FEB1A647A8900893517 /* RootViewController.m in Sources */,
 				28199FE21A647A8900893517 /* main.m in Sources */,
 				2819A1FB1A66E72500893517 /* CAShapeLayer+MindMeld.m in Sources */,
 				2819A1F51A66E6E000893517 /* UIView+CornerRadius.m in Sources */,

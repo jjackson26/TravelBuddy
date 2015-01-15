@@ -6,21 +6,27 @@
 //  Copyright (c) 2015 Expect Labs. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "RootViewController.h"
 
+// controllers
 #import <JHSidebar/JHSidebarViewController.h>
-#import <MindMeldSDK/MindMeldSDK.h>
+#import "LandingViewController.h"
+#import "SearchResultsTableViewController.h"
 
+// views
 #import "MMActivityIndicatorView.h"
 #import "MMMicrophoneButton.h"
+
+// utilities
+#import <MindMeldSDK/MindMeldSDK.h>
 #import "UIColor+MindMeldStarterApp.h"
 
 static NSString *const kMindMeldAppID = @"04d9414638edc91742257c680ed9359630c1f17a";
 
-static const NSUInteger kNumTextEntries = 3;
+static const NSUInteger kNumTextEntries = 1;
 static const NSUInteger kNumDocuments = 10;
 
-@interface ViewController ()
+@interface RootViewController ()
 
 @property (nonatomic, strong) MMApp *mindMeldApp;
 
@@ -28,9 +34,14 @@ static const NSUInteger kNumDocuments = 10;
 
 @property (nonatomic, strong) NSMutableArray *activeTextEntryQueue;
 
+@property (nonatomic, assign) BOOL resultsAreVisible;
+
+@property (nonatomic, strong) LandingViewController *landingController;
+@property (nonatomic, strong) SearchResultsTableViewController *searchResultsController;
+
 @end
 
-@implementation ViewController
+@implementation RootViewController
 
 + (void)initialize
 {
@@ -76,6 +87,7 @@ static const NSUInteger kNumDocuments = 10;
     [super viewDidLoad];
 
     [self startMindMeld];
+    [self prepareSearchResults];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -232,8 +244,15 @@ static const NSUInteger kNumDocuments = 10;
     MMSuccessHandler successHandler = ^(id response) {
         NSLog(@"got documents");
         // Reload the results table so the documents are displayed.
-        [weakSelf.resultsTableView reloadSections:[NSIndexSet indexSetWithIndex:0]
-                             withRowAnimation:UITableViewRowAnimationFade];
+        if (!weakSelf.resultsAreVisible) {
+            [weakSelf moveSearchResultsOnscreen:YES
+                                       animated:YES
+                                     completion:^(BOOL finished) {
+                                         weakSelf.searchResultsController.documents = response;
+                                     }];
+        } else {
+            weakSelf.searchResultsController.documents = response;
+        }
 //        [weakSelf hideActivity];
     };
     MMFailureHandler failureHandler = ^(NSError *error) {
@@ -250,30 +269,67 @@ static const NSUInteger kNumDocuments = 10;
 }
 
 
-#pragma mark - UITableViewDataSource, Delegate
+#pragma mark - Search Results
 
-- (NSInteger)tableView:(UITableView *)tableView
- numberOfRowsInSection:(NSInteger)section {
-    if (self.mindMeldApp.activeSession) {
-        return self.mindMeldApp.activeSession.documents.count;
+- (void)prepareSearchResults
+{
+    [self moveSearchResultsOnscreen:NO animated:NO completion:nil];
+}
+
+
+- (void)moveSearchResultsOnscreen:(BOOL)onscreen
+                         animated:(BOOL)animated
+                       completion:(void (^)(BOOL))completion
+{
+    if (onscreen) {
+        self.searchResultsContainerView.hidden = NO;
+    }
+
+    typeof(self) __weak weakSelf = self;
+    void (^animations)() = ^{
+        weakSelf.searchResultsContainerView.alpha = onscreen ? 1.0 : 0;
+    };
+
+    
+    void (^innerCompletion)(BOOL) = ^(BOOL finished) {
+        if (!onscreen) {
+            weakSelf.searchResultsContainerView.hidden = YES;
+        }
+
+        weakSelf.resultsAreVisible = onscreen;
+        if (completion) {
+            completion(finished);
+        }
+    };
+
+    if (animated) {
+        [UIView animateWithDuration:1.0
+                              delay:0.0
+                            options:UIViewAnimationOptionCurveEaseInOut
+                         animations:animations
+                         completion:innerCompletion];
     } else {
-        return 0;
+        animations();
+        innerCompletion(YES);
     }
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView
-         cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *const kDocumentCellID = @"documentCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kDocumentCellID];
-    
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
-                                      reuseIdentifier:kDocumentCellID];
+
+#pragma mark - Segues
+
+static NSString *const kSegueIdentifierLanding = @"segueLanding";
+static NSString *const kSegueIdentifierSearchResults = @"segueSearchResults";
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue
+                 sender:(id)sender
+{
+    [super prepareForSegue:segue sender:sender];
+
+    if ([kSegueIdentifierLanding isEqualToString:segue.identifier]) {
+        self.landingController = segue.destinationViewController;
+    } else if ([kSegueIdentifierSearchResults isEqualToString:segue.identifier]) {
+        self.searchResultsController = segue.destinationViewController;
     }
-    
-    cell.textLabel.text = self.mindMeldApp.activeSession.documents[indexPath.row][@"title"];
-    
-    return cell;
 }
 
 
